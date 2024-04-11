@@ -1,0 +1,12 @@
+FROM ocaml/opam
+
+WORKDIR /home/opam
+
+RUN <<"EOF" 
+echo "test -r /home/opam/.opam/opam-init/init.sh 
+&& . /home/opam/.opam/opam-init/init.sh > 
+/dev/null 2> /dev/null || true" \
+| xargs | tee -a ~/.profile 
+EOF
+
+
