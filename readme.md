@@ -4,9 +4,7 @@ A unikernel for the Network of Momentum
 ### Basics
 <p align="center">
   <img src="./img/unikernel.png">
-</p>
-
-[unikernels](https://dl.acm.org/doi/10.1145/2557963.2566628) | [OCaml](https://ocaml.org/) | [mirage](https://mirage.io/docs/overview-of-mirage)
+  <a href="https://dl.acm.org/doi/10.1145/2557963.2566628">Unikernel Explained</a> | <a href="https://ocaml.org/">Ocaml</a> | <a href="https://mirage.io/docs/overview-of-mirage">MirageOS</a>
 
 ### OCaml
 
@@ -28,6 +26,8 @@ let register ?(argv = default_argv) ?(reporter = default_reporter ()) ?src name
   let init = Some first ++ Some delay_startup ++ reporter in
   register ?init ?src name jobs
 ```
+### Mirage
+MirageOS uses the OCaml language, with libraries that provide networking, storage and concurrency support that work under Unix during development, but become operating system drivers when being compiled for production deployment.
 
 ## Proposal
 This proposal aims to develop a specialized operating system optimized for running a NoM nodes with dual coin support over dual proof-of-work/proof-of-stake (PoW/PoS) consensus mechanism. The primary objective is to achieve feeless transactions by leveraging the unique features in a multi-chain architecture. The proposal focuses on delivering a lightweight, efficient, and secure unikernel solution tailored specifically for the Network of Momentum,
