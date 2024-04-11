@@ -2,11 +2,11 @@
 A unikernel for the Network of Momentum
 
 ### Basics
-[unikernels](https://dl.acm.org/doi/10.1145/2557963.2566628)
+<p align="center">
+  <img src="./img/unikernel.png">
+</p>
 
-[OCaml](https://ocaml.org/)
-
-[mirage](https://mirage.io/docs/overview-of-mirage)
+[unikernels](https://dl.acm.org/doi/10.1145/2557963.2566628) | [OCaml](https://ocaml.org/) | [mirage](https://mirage.io/docs/overview-of-mirage)
 
 ### OCaml
 
