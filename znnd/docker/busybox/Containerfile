@@ -1,0 +1,11 @@
+FROM busybox:latest
+
+WORKDIR /bin/
+
+COPY znnd-amd64 /bin/
+
+RUN chmod +x /bin/znnd-amd64 
+
+EXPOSE 35995 35996 35997 35998
+
+CMD ["/bin/znnd-amd64"]
