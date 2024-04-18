@@ -1,11 +1,18 @@
-FROM busybox:latest
+FROM alpine:latest
 
-WORKDIR /bin/
+WORKDIR /home/
 
 COPY znnd-amd64 /bin/
 
-RUN chmod +x /bin/znnd-amd64 
+COPY libznn.so /lib/
+
+RUN <<EOF
+mkdir -p /root/.znn
+chmod +x /bin/znnd-amd64 
+EOF
+
+#COPY config.json /root/.znn
 
 EXPOSE 35995 35996 35997 35998
 
-CMD ["/bin/znnd-amd64"]
+CMD ["znnd-amd64"]

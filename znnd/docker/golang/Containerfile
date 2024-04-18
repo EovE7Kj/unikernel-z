@@ -3,7 +3,7 @@ FROM golang:latest
 WORKDIR /go
 
 RUN <<EOF
-git clone https://github.com/EovE7Kj/go-zenon
+git clone https://github.com/zenon-network/go-zenon
 cd go-zenon
 make
 make znnd
