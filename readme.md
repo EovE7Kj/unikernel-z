@@ -31,19 +31,19 @@ let register ?(argv = default_argv) ?(reporter = default_reporter ()) ?src name
 MirageOS uses the OCaml language, with libraries that provide networking, storage and concurrency support that work under Unix during development, but become operating system drivers when being compiled for production deployment.
 
 ## Proposal
-This proposal aims to develop a specialized operating system optimized for running a NoM nodes with dual coin support over dual proof-of-work/proof-of-stake (PoW/PoS) consensus mechanism. The primary objective is to achieve feeless transactions by leveraging the unique features in a multi-chain architecture. The proposal focuses on delivering a lightweight, efficient, and secure unikernel solution tailored specifically for the Network of Momentum,
+This proposal focuses on delivering a lightweight, efficient, and secure unikernel solution tailored specifically for the Network of Momentum.
 
 ### Phases 
 #### Phase 1: Testnet
 - High-level overview of main tasks:
 ```
-    Develop the core components of the Zenon Unikernel, including support for PoW/PoS consensus mechanism, and networking capabilities.
+    Develop the core components for a general Zenon Unikernel
     Optimize resource usage and performance for efficient operation within a unikernel environment.
     Implement basic security measures to protect against common threats and vulnerabilities.
 ```
 - Completion of Phase 1 will be measured by:
 ```
-    Successful implementation of PoW+PoS consensus mechanism within the unikernel.
+    Successful implementation of node encapsulation within the NoM (unikernel-ize `znnd`)
     Demonstrable improvement in resource efficiency and performance.
     Deployment of a testnet version of unikernel-z for community testing and feedback.
 ```
@@ -73,3 +73,4 @@ This proposal aims to develop a specialized operating system optimized for runni
     Successful deployment of the Zenon Unikernel on the mainnet, enabling feeless transactions and supporting the growth of the Zenon ecosystem.
     Resolution of any outstanding issues or optimizations based on community feedback and testing results.
 ```
+

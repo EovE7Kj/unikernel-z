@@ -1,0 +1,23 @@
+# dune build ./config.exe --root . --workspace ./mirage/dune-workspace.config
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/gage/.cache/dune/db
+# Workspace root: /home/gage/znn/zenduk
+# Auto-detected concurrency: 12
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/gage/.opam/default/bin/ocamlc.opt -config > /tmp/dune_ba34f3_output
+$ (cd _build/default && /home/gage/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .config.eobjs/byte -I /home/gage/.opam/default/lib/angstrom -I /home/gage/.opam/default/lib/astring -I /home/gage/.opam/default/lib/base64 -I /home/gage/.opam/default/lib/bigstringaf -I /home/gage/.opam/default/lib/bos -I /home/gage/.opam/default/lib/cmdliner -I /home/gage/.opam/default/lib/domain-name -I /home/gage/.opam/default/lib/emile -I /home/gage/.opam/default/lib/fmt -I /home/gage/.opam/default/lib/fpath -I /home/gage/.opam/default/lib/ipaddr -I /home/gage/.opam/default/lib/logs -I /home/gage/.opam/default/lib/macaddr -I /home/gage/.opam/default/lib/mirage -I /home/gage/.opam/default/lib/mirage/devices -I /home/gage/.opam/default/lib/mirage/functoria -I /home/gage/.opam/default/lib/ocaml/unix -I /home/gage/.opam/default/lib/pecu -I /home/gage/.opam/default/lib/rresult -I /home/gage/.opam/default/lib/stringext -I /home/gage/.opam/default/lib/uri -I /home/gage/.opam/default/lib/uutf -no-alias-deps -opaque -o .config.eobjs/byte/dune__exe__Config.cmo -c -impl config.ml)
+> File "config.ml", line 12, characters 2-5:
+> 12 |   job "unikernel" @@ fun _ ->
+>        ^^^
+> Error: This expression has type Mirage.job Functoria__Type.t
+>        This is not a function; it cannot be applied.
+[2]
