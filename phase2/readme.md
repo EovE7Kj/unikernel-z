@@ -23,6 +23,10 @@ The performance metrics measured include:
 
 ## Data Summary
 
+![average](../img/AVG.png)
+
+![full](../img/BFTM.png)
+
 - **Baremetal:**
   - **Boot Time:** Mean = 11500 ms, Standard Deviation = 338.17 ms
   - **TTM:** Mean = 28500 ms, Standard Deviation = 473.51 ms
