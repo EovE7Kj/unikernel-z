@@ -19,7 +19,7 @@ This analysis compares the performance of three different deployment modes: bare
 
 The performance metrics measured include:
 - **Boot Time (ms):** Time taken for the system to boot.
-- **Time to First Momentum (TTM) (ms):** Time taken to reach the first operational state.
+- **Time to First Momentum (TTM) (ms):** Time taken to reach the first momentum.
 
 ## Data Summary
 
