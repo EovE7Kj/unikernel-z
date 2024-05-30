@@ -60,7 +60,9 @@ The data reveals that the unikernel-znnd setup offers **statistically significan
    - Given the considerable reduction in both boot time and TTM, along with minimal variability, unikernel-znnd presents a clear advantage in scenarios requiring rapid deployment and minimal downtime.
 
 ## Implications 
-Given the trivial Boot Time and TTM, it becomes apparent  that if a node database can be bootstrapped, the potential for endless, realtime scalability of nodes becomes a reality. Zk-proofing can also be implemented here to create redundant/"replacable" nodes on-demand. 
+
+- Scalability: Given the trivial Boot Time and TTM, it becomes apparent  that if a node database can be bootstrapped, the potential for endless, realtime scalability of nodes becomes a reality. Zk-proofing can also be implemented here to create redundant/"replacable" nodes on-demand.
+- Security: Of course, the implementation of a unikernel at the node-level introduces other meaningful benefits that could not be addressed here. Unikernels inherently offer enhanced security due to their minimal attack surface. Each unikernel is designed to run a single application, eliminating the unnecessary code that can introduce vulnerabilities. Additionally, unikernels reduce the complexity of the system, making it easier to audit and secure. This streamlined approach to deployment further enhances the overall security posture, providing robust protection against a range of potential threats.
 
 ## Conclusion
 
